@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+  }
+  .serviveLogo{
+      width: 70px;
+      height: 70px;
+      border-radius: 4%;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;
+    margin-left: 6%;
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 580px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .row {margin: 0 -5px;
+        margin-left: 1%;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    border-radius: 4%;
+    padding: 19px;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .card:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .card:hover{
+    box-shadow: 2px 4px 8px 5px rgba(0.1, 0.1, 0.1, 0.2);
+  }
+  @media screen and (max-width: 870px) {
+    .column {
+        width: 40%;
+    }
+    .row{
+        margin-left: 10%;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .column {
+        width: 90%;
+    }
+    .row{
+        margin-left: 0%;
+    }
+    
+  }
+  
