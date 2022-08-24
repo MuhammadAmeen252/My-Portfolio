@@ -1,3 +1,3 @@
 My portfolio representing my work and skills.
 Link:
-http://muhammadameen.tech/
+https://muhammadameen252.github.io/My-Portfolio/
